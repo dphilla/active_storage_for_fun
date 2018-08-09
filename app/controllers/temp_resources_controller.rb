@@ -69,6 +69,6 @@ class TempResourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def temp_resource_params
-      params.fetch(:temp_resource, {})
+      params.fetch(:temp_resource, :uploads, {})
     end
 end
