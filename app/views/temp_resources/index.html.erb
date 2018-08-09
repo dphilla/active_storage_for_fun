@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Temp Resources</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @temp_resources.each do |temp_resource| %>
+      <tr>
+        <td><%= link_to 'Show', temp_resource %></td>
+        <td><%= link_to 'Edit', edit_temp_resource_path(temp_resource) %></td>
+        <td><%= link_to 'Destroy', temp_resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Temp Resource', new_temp_resource_path %>

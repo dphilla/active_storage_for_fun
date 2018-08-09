@@ -1,0 +1,2 @@
+module TempResourcesHelper
+end

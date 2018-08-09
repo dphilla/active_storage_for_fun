@@ -1,0 +1,2 @@
+class TempResource < ApplicationRecord
+end
