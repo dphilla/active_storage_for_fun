@@ -49,7 +49,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Store uploaded files on the local system
-  config.active_storage.servive = :local
+  config.active_storage.service = :local
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
